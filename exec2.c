@@ -32,14 +32,9 @@ int main(){
     	printf("%d ", v_alocado[k]);
     printf("\n");
 
-
-
-
-
    free(v_alocado);
    return 0; 
 }
-
 
 void ordena(int *v, int N) 
 {
@@ -58,46 +53,3 @@ void ordena(int *v, int N)
    }
   }
 
-//troca(&a, &b);
-
-
-/***
-void ordena(int *v, int N){
-	int x,y,z;
-
-	x = N / 2;
-	y = x;
-}
-**/
-
-/*
-void ordena(int *a, int fim) {
-    int i, f, x, y;
-     
-    i = 0;
-    f = fim;
-    x = a[(i + f) / 2];
-     
-    while(i <= f) {
-        while(a[i] < x && i < f) {
-            i++;
-        }
-        while(a[f] > x && f > i)f--;
-        if(i <= f) {
-            y = a[i];
-            a[i] = a[f];
-            a[f] = y;
-            i++;
-            f--;
-        }
-    }
-     
-    if(f > i) {
-        ordena(a, f);
-    }
-    if(i < f) {
-        ordena(a, i);
-    }
-}
-
-*/
